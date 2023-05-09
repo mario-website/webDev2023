@@ -1,5 +1,5 @@
 .contact {
-  --gapForm: 10px;
+  --gapForm: 15px;
   padding: 9rem 0;
 
   & .container {
@@ -21,7 +21,10 @@
     flex: 1;
 
     & input {
-      padding: 12px;
+      padding: 2rem 0 2rem 3rem;
+      font-size: 1.5rem;
+      border: 1px solid #333333;
+      border-radius: 8px;
     }
 
     & .form-row {
@@ -39,8 +42,9 @@
       flex-direction: column;
       gap: var(--gapForm);
 
-      & .btn {
-        max-width: fit-content;
+      & .button {
+        min-width: max-content;
+        height: fit-content;
         background-color: #ed4c5c;
         border: none;
         border-radius: 6px;
@@ -51,7 +55,7 @@
         font-size: 1rem;
       }
 
-      & .btn:hover {
+      & .button:hover {
         cursor: pointer;
       }
     }
