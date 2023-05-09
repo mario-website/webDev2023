@@ -7,24 +7,23 @@ import ctaModel from '../../models/CTA.model';
 
 const CTA = () => {
   return (
-    <div className="cta">
-      <div className="container">
-        <div className="content">
-          <Heading level={2} color="white">
+    <div className='cta'>
+      <div className='container'>
+        <div className='content'>
+          <Heading level={2} color='white'>
             {ctaModel.heading}
           </Heading>
-          <Text color="white">
+          <Text textAlign='justify' color='white'>
             {ctaModel.text}
           </Text>
-          <img src={iconsImg} alt="Icons" />
+          <img src={iconsImg} alt='Icons' />
         </div>
-        <div className="image">
-          <img src={focusImg} alt="Focus" />
+        <div className='image'>
+          <img src={focusImg} alt='Focus' />
         </div>
       </div>
-      
     </div>
-  )
+  );
 };
 
 export default CTA;

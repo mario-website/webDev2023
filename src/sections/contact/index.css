@@ -20,6 +20,10 @@
   & .form {
     flex: 1;
 
+    & input {
+      padding: 12px;
+    }
+
     & .form-row {
       display: flex;
       width: 100%;
@@ -34,6 +38,22 @@
       display: flex;
       flex-direction: column;
       gap: var(--gapForm);
+
+      & .btn {
+        max-width: fit-content;
+        background-color: #ed4c5c;
+        border: none;
+        border-radius: 6px;
+        text-align: center;
+        color: white;
+        padding: 1.2rem 2.6rem;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      & .btn:hover {
+        cursor: pointer;
+      }
     }
   }
 }

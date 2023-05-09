@@ -30,7 +30,7 @@ const Contact = () => {
       <div className='container'>
         <div className='description'>
           <Heading level={2}>{contactModel.heading}</Heading>
-          <Text>{contactModel.text}</Text>
+          <Text textAlign='justify'>{contactModel.text}</Text>
         </div>
         <div className='form'>
           <form onSubmit={handleSubmit}>
