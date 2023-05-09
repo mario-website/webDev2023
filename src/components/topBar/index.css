@@ -14,11 +14,12 @@
     align-items: center;
     max-width: 111rem;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
 .topbar.scroll {
-  background-color: #D5204799;
+  background-color: #d5204799;
 }
 
 .logo-container {
@@ -51,6 +52,7 @@
 }
 
 .menu.show {
+  display: flex;
   flex-direction: column;
   position: absolute;
   top: 100%;
@@ -84,5 +86,9 @@
 
   .burger-menu {
     display: block;
+  }
+
+  .topbar .topbar-container {
+    padding: 20px;
   }
 }
