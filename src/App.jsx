@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { ErrorBoundary } from 'react-error-boundary';
+import ErrorFallback from './components/errorFallback';
 import TopBar from './components/topBar';
 import Intro from './sections/intro';
 import Features from './sections/features';
@@ -9,16 +11,18 @@ import Contact from './sections/contact';
 
 function App() {
   return (
-    <div className='App'>
-      <div className='container'>
-        <TopBar />
-        <Intro />
-        <Features />
-        <Technology />
-        <CTA />
-        <Contact />
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <div className='App'>
+        <div className='container'>
+          <TopBar />
+          <Intro />
+          <Features />
+          <Technology />
+          <CTA />
+          <Contact />
+        </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
 }
 
