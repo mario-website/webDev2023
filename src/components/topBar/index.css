@@ -14,7 +14,7 @@
     align-items: center;
     max-width: 111rem;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--containerPadding);
   }
 }
 
@@ -89,6 +89,6 @@
   }
 
   .topbar .topbar-container {
-    padding: 20px;
+    padding: var(--containerPadding);
   }
 }

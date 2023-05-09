@@ -1,5 +1,7 @@
+:root {
+  --containerPadding: 20px;
+}
 #root {
-  
   min-height: 100vh;
 
   & * {
@@ -9,6 +11,11 @@
 
 .App {
   margin: 0 auto;
+  margin: 0 calc(var(--containerPadding) * -1);
+
+  & .container {
+    padding: 0 var(--containerPadding);
+  }
 }
 
 h1 {
