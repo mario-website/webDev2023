@@ -34,22 +34,25 @@ const Contact = () => {
         </div>
         <div className='form'>
           <form onSubmit={handleSubmit}>
-            <input
-              type='text'
-              name='firstName'
-              value={formData.firstName}
-              onChange={handleInputChange}
-              placeholder='First Name'
-              required
-            />
-            <input
-              type='text'
-              name='lastName'
-              value={formData.lastName}
-              onChange={handleInputChange}
-              placeholder='Last Name'
-              required
-            />
+            <div className='form-row'>
+              <input
+                type='text'
+                name='firstName'
+                value={formData.firstName}
+                onChange={handleInputChange}
+                placeholder='First Name'
+                required
+              />
+              <input
+                type='text'
+                name='lastName'
+                value={formData.lastName}
+                onChange={handleInputChange}
+                placeholder='Last Name'
+                required
+              />
+            </div>
+
             <input
               type='tel'
               name='phoneNumber'
@@ -66,9 +69,9 @@ const Contact = () => {
               placeholder='What service are you interested in?'
               required
             />
-            {/* <button type='submit' onClick={handleSubmit} className='btn'>
-            SUBMIT NOW
-          </button> */}
+            <button type='submit' onClick={handleSubmit} className='btn'>
+              SUBMIT NOW
+            </button>
           </form>
         </div>
       </div>

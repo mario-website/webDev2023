@@ -1,5 +1,6 @@
 :root {
   --containerPadding: 20px;
+  --gapInsideSections: 25px;
 }
 #root {
   min-height: 100vh;

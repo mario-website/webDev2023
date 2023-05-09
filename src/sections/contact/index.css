@@ -1,6 +1,39 @@
 .contact {
+  --gapForm: 10px;
+  padding: 9rem 0;
+
   & .container {
+    display: flex;
+    gap: var(--gapInsideSections);
     max-width: 111rem;
     margin: 0 auto;
+  }
+
+  & .description {
+    flex: 1;
+
+    & > p {
+      margin: 2.4rem 0 4rem 0;
+    }
+  }
+
+  & .form {
+    flex: 1;
+
+    & .form-row {
+      display: flex;
+      width: 100%;
+      gap: var(--gapForm);
+
+      & input {
+        flex: 1;
+      }
+    }
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gapForm);
+    }
   }
 }
