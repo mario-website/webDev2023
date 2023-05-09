@@ -1,3 +1,6 @@
 .contact {
-  height: 30rem;
+  & .container {
+    max-width: 111rem;
+    margin: 0 auto;
+  }
 }
