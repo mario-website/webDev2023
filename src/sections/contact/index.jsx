@@ -111,7 +111,9 @@ const Contact = () => {
             />
 
             <div className='form-row'>
-              <Button onClick={handleSubmit}>SUBMIT NOW</Button>
+              <Button type='submit' onClick={handleSubmit}>
+                SUBMIT NOW
+              </Button>
               <Text>{formSubmitedSucesful}</Text>
             </div>
           </form>
