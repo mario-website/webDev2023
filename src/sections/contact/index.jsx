@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Text from '../../components/text';
 import Heading from '../../components/heading';
 import contactModel from '../../models/Contact.model';
+import Button from '../../components/button';
 
 const Contact = () => {
   const formDataDefultValues = {
@@ -110,9 +111,7 @@ const Contact = () => {
             />
 
             <div className='form-row'>
-              <button type='submit' onClick={handleSubmit} className='button'>
-                SUBMIT NOW
-              </button>
+              <Button onClick={handleSubmit}>SUBMIT NOW</Button>
               <Text>{formSubmitedSucesful}</Text>
             </div>
           </form>

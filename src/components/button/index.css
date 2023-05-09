@@ -1,0 +1,20 @@
+.button {
+  min-width: max-content;
+  height: fit-content;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  padding: 1.2rem 2.6rem;
+  text-decoration: none;
+  font-size: 1rem;
+
+  &.primary {
+    background-color: #ed4c5c;
+    color: white;
+  }
+
+  &.secondary {
+    background-color: white;
+    color: #ed4c5c;
+  }
+}

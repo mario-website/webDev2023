@@ -41,23 +41,6 @@
       display: flex;
       flex-direction: column;
       gap: var(--gapForm);
-
-      & .button {
-        min-width: max-content;
-        height: fit-content;
-        background-color: #ed4c5c;
-        border: none;
-        border-radius: 6px;
-        text-align: center;
-        color: white;
-        padding: 1.2rem 2.6rem;
-        text-decoration: none;
-        font-size: 1rem;
-      }
-
-      & .button:hover {
-        cursor: pointer;
-      }
     }
   }
 }
